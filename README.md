@@ -1,6 +1,6 @@
-# qiro
-Quantum-Informed Recursive Optimization Algorithms. 
-
+# qiro 
+Quantum-Informed Recursive Optimization Algorithms. Original Author: Judi 
+I only modify the cost to implement some new features. 
 Contains most of the code; stuff to be added: parallel tempering, simulated annealing. 
 
 ### Installation
@@ -17,23 +17,34 @@ conda activate qiro
 Then install dependencies:
 ```
 pip install -r requirements.txt
+
+Currently missing qiskit and pennylane. There is some complication due to they using old version of numpy. 
 ```
 
 
 ### File descriptions:
 
-#### QIRO_Execution.ipynb
+#### Testing_Notebook_().ipynb
+Jupyter Notebook where I play around with different idea as well as obtaining numerical results. It is a good starting place for you to learn how to use the script 
 
-Jupyter Notebook where you can play around with different problems and execute RQAOA and QIRO for MIS and MAX-2-SAT. Should probably be the entry point for anyone who wants to use this code.
+#### AnsatzGenerator.py 
+Contains generation of QAOA. 
 
 #### Generating_Problems.py
 
-Contains generation of MIS and MAX-2-SAT problems, and transforming them in the correct shape for QIRO and RQAOA.
-
+Contains generation of MIS, MaxCut, and MAX-2-SAT problems, and transforming them in the correct shape for QIRO. For MIS problem, we also include method to generate Hamiltonian for pennylane simulator 
 
 #### Calculating_Expectation_Values.py
 
 Contains functions for calculating the expectation values of the correlations from p=1 QAOA for MIS and MAX-2-SAT problems. Should in principle work for any quadratic Hamiltonian.
+
+#### Calculating_Expectation_Values.py
+
+Contains functions for calculating the expectation values of the correlations for MIS and MaxCut problems using PennyLane simulator. Could have some bugs due to I was rushing to code it. 
+
+#### OrdinaryQAOA.py 
+
+Contains function to train QAOA 
 
 #### QIRO_MAX_2_SAT.py
 
@@ -43,9 +54,12 @@ Contains the QIRO algorithm for MAX-2-SAT problems.
 
 Contains the QIRO algorithm for MIS problems.
 
-#### RQAOA.py
+#### QIRO_MC.py
 
-Contains the RQAOA algorithm for any quadratic problem (among others, MIS and MAX-2-SAT).
+Contains the QIRO algorithm for MaxCut problems.
+
+#### RQAOA.py
+This has been removed and replaced by QIRO_MaxCut.py 
 
 #### aws_quera.py
 
