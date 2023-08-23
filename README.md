@@ -1,5 +1,5 @@
 # qiro 
-Quantum-Informed Recursive Optimization Algorithms. Original Author: Judi 
+Quantum-Informed Recursive Optimization Algorithms. Original Author: Rudi 
 
 I only modify the cost to implement some new features. This is a newer version than the one in my IFX public folder since it has pennylane simulator. 
 
