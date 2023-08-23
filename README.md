@@ -40,7 +40,7 @@ Contains generation of MIS, MaxCut, and MAX-2-SAT problems, and transforming the
 
 Contains functions for calculating the expectation values of the correlations from p=1 QAOA for MIS and MAX-2-SAT problems. Should in principle work for any quadratic Hamiltonian.
 
-#### Calculating_Expectation_Values.py
+#### Expectation_values_PennyLane.py
 
 Contains functions for calculating the expectation values of the correlations for MIS and MaxCut problems using PennyLane simulator. Could have some bugs due to I was rushing to code it. 
 
