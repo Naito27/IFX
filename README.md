@@ -1,6 +1,8 @@
 # qiro 
 Quantum-Informed Recursive Optimization Algorithms. Original Author: Judi 
-I only modify the cost to implement some new features. 
+
+I only modify the cost to implement some new features. This is a newer version than the one in my IFX public folder since it has pennylane simulator. 
+
 Contains most of the code; stuff to be added: parallel tempering, simulated annealing. 
 
 ### Installation
